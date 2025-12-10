@@ -17,7 +17,7 @@ a{
 
  .container{
     height: 1000px;
-    background-image: url("/IMG/Frutiger.png");
+    background-image: url("https://raw.githubusercontent.com/Donnemoilesgatos/Public/refs/heads/main/IMG/Frutiger.png");
     background-position: center;
     background-size: cover;
     display: flex;
@@ -47,19 +47,13 @@ a{
     transform: translate(0%,-15px);
 }
 
-.bouton { 
+.bouton {
     height: 80%;
     position:fixed;
     bottom: -10px;
-    transform-origin: center;
-    transition: all 0.2s ease-in-out;
     cursor: url(https://www.rw-designer.com/cursor-view/23165.png), pointer;
-
-}
-
-.bouton:hover{
-transform: scale(1.1);
-animation-play-state: paused;
+    transform-origin: bottom;
+    animation: vent 5s ease-in-out 0s infinite alternate-reverse ; 
 }
 
 @keyframes vent{
